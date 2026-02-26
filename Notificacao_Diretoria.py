@@ -10,36 +10,36 @@ dados_cenarios = {
         "evasao": "R$ 12.100.000,00",
         "atraso": "164 dias",
         "impacto_mensal": "R$ 314.000,00",
-        "causa": "Erros recorrentes na funcionalidade OnePass e recusa de homologação pelo GAAT[cite: 110, 106].",
-        "acao": "Concluir homologação técnica até 14/11 para garantir Go-Live em 24/11[cite: 112].",
-        "responsavel": "Rodrigo Vasconcelos e Cliente INS[cite: 93]."
+        "causa": "Erros recorrentes na funcionalidade OnePass e recusa de homologação pelo GAAT[citado na linha: 106, 110].",
+        "acao": "Concluir homologação técnica até 14/11 para garantir Go-Live em 24/11[citado na linha: 112].",
+        "responsavel": "Rodrigo Vasconcelos e Cliente INS[citado na linha: 93]."
     },
     "2. Retrabalho e Centro de Custo (CeosGo)": {
         "status": "SUSPENSO 🟡",
         "evasao": "R$ 11.000.000,00 (estimada)",
         "atraso": "60 dias",
         "impacto_mensal": "Não mensurado",
-        "causa": "Novas exigências do cliente sobre configurações de centro de custo após homologação e treinamento[cite: 10, 11].",
-        "acao": "Suspensão imediata por retrabalho conforme instrução da diretoria (Francisco Figueiredo)[cite: 204].",
-        "responsavel": "José Alexandre[cite: 16]."
+        "causa": "Novas exigências do cliente sobre configurações de centro de custo após homologação e treinamento[citado na linha: 10, 11].",
+        "acao": "Suspensão imediata por retrabalho conforme instrução da diretoria (Francisco Figueiredo)[citado na linha: 204].",
+        "responsavel": "José Alexandre[citado na linha: 16]."
     },
     "3. Impasse de Escopo Internacional (Costa Rica)": {
         "status": "CRÍTICO 🔴",
         "evasao": "US$ 177.000,00 (Total)",
         "atraso": "N/A (Bloqueio)",
         "impacto_mensal": "US$ 107.784,00 (Subscrição)",
-        "causa": "Divergência entre protótipo apresentado em 23/06/25 e entrega final do Dashboard de licenças[cite: 168, 171].",
-        "acao": "Definição técnica sobre viabilidade da tela e elaboração de resposta formal/legal[cite: 173, 174].",
-        "responsavel": "Time de Tecnologia e Jean Karr[cite: 176, 177]."
+        "causa": "Divergência entre protótipo apresentado em 23/06/25 e entrega final do Dashboard de licenças[citado na linha: 168, 171].",
+        "acao": "Definição técnica sobre viabilidade da tela e elaboração de resposta formal/legal[citado na linha: 173, 174].",
+        "responsavel": "Time de Tecnologia e Jean Karr[citado na linha: 176, 177]."
     },
     "4. Atrasos Internos (Universidade/Fábrica)": {
         "status": "ALERTA 🟡",
         "evasao": "R$ 12.000.000,00",
         "atraso": "Efeito 'Bola de Neve'",
         "impacto_mensal": "R$ 314.000,00",
-        "causa": "Troca de plataforma da Universidade (idioma espanhol) e demora na devolução de documentos pela Fábrica[cite: 205, 206].",
-        "acao": "Escalar imediatamente atrasos com impacto financeiro e realizar reuniões mais recorrentes[cite: 208, 211].",
-        "responsavel": "José Alexandre e Paulo Lima[cite: 207, 48]."
+        "causa": "Troca de plataforma da Universidade (idioma espanhol) e demora na devolução de documentos pela Fábrica[citado na linha: 205, 206].",
+        "acao": "Escalar imediatamente atrasos com impacto financeiro e realizar reuniões mais recorrentes[citado na linha: 208, 211].",
+        "responsavel": "José Alexandre e Paulo Lima[citado na linha: 207, 48]."
     }
 }
 
@@ -76,7 +76,7 @@ with st.container():
     
     **2. IMPACTO NO NEGÓCIO**
     * **Financeiro:** {dados['evasao']} (Perda acumulada até o momento).
-    * **Cronograma:** Atraso de {dados['atraso']} impactando diretamente a meta de faturamento de 50% da subscrição[cite: 63, 106].
+    * **Cronograma:** Atraso de {dados['atraso']} impactando diretamente a meta de faturamento de 50% da subscrição[citado na linha: 63, 106].
     
     **3. PLANO DE MITIGAÇÃO**
     * **Ação:** {dados['acao']}
@@ -109,9 +109,10 @@ st.divider()
 st.markdown("### 📚 Boas Práticas Recomendadas")
 st.markdown("""
 1.  **Princípio de Minto:** Comece pela conclusão (Impacto Financeiro) e termine com o suporte técnico.
-2.  **Radical Candor:** Seja direto sobre atrasos internos (Fábrica/Universidade) para que a diretoria possa agir[cite: 206, 211].
-3.  **Gestão de Stakeholders:** Utilize dados reais de evasão (R$ 12M) para priorizar agendas com o cliente[cite: 92, 98].
-4.  **Matriz de Responsabilidade (RACI):** Sempre aponte um responsável nominal por ação[cite: 175, 176].
-5.  **Comunicação Propositiva:** Nunca apresente o atraso de 164 dias sem o novo cronograma realista[cite: 200, 201].
+2.  **Radical Candor:** Seja direto sobre atrasos internos (Fábrica/Universidade) para que a diretoria possa agir[citado na linha: 206, 211].
+3.  **Gestão de Stakeholders:** Utilize dados reais de evasão (R$ 12M) para priorizar agendas com o cliente[citado na linha: 92, 98].
+4.  **Matriz de Responsabilidade (RACI):** Sempre aponte um responsável nominal por ação[citado na linha: 175, 176].
+5.  **Comunicação Propositiva:** Nunca apresente o atraso de 164 dias sem o novo cronograma realista[citado na linha: 200, 201].
 """)
+
 
