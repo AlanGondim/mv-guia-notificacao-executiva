@@ -44,7 +44,7 @@ dados_cenarios = {
 }
 
 # --- INTERFACE STREAMLIT ---
-st.title("🏆 Guia de Comunicação Dinâmico - Ecossistema MV")
+st.title("🏆 Guia de Comunicação Executiva - Ecossistema MV")
 st.markdown("---")
 
 # Seleção de Cenário pelo Analista
@@ -114,3 +114,4 @@ st.markdown("""
 4.  **Matriz de Responsabilidade (RACI):** Sempre aponte um responsável nominal por ação[cite: 175, 176].
 5.  **Comunicação Propositiva:** Nunca apresente o atraso de 164 dias sem o novo cronograma realista[cite: 200, 201].
 """)
+
