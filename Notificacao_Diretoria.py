@@ -13,7 +13,23 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 try:
     # Lendo os dados da planilha
     # Certifique-se de que sua planilha tenha colunas com os nomes exatos usados abaixo
-    df = conn.read()
+   # Para isso (apenas para teste visual):
+    df = pd.DataFrame([{
+    "Programa": "INS Costa Rica",
+    "Data_Notificacao": "2026-02-27",
+    "Status": "CRÍTICO 🔴",
+    "Resumo_Situacao": "Atraso de 164 dias no cronograma.",
+    "Evasao_Receita": "R$ 12.1 MM[cite: 106].",
+    "Prazo": "24/11/25.",
+    "Receita_Atual": "R$ 314k.",
+    "Custo_Total": "R$ 2.5 MM",
+    "Atrasado": "SIM",
+    "Recomendacao_1": "Resposta formal para resguardo legal[cite: 174].",
+    "Recomendacao_2": "Novo cronograma realista[cite: 201].",
+    "Grau_Impacto": "CRÍTICO",
+    "O_Que_Impacta": "50% da subscrição[cite: 167].",
+    "Resumo_Consolidado": "Evasão acumulada de R$ 12M devido a falhas no OnePass[cite: 101, 106]."
+}])
 except Exception as e:
     st.error("Erro ao conectar com a planilha. Verifique o link e as permissões.")
     st.stop()
@@ -84,3 +100,4 @@ else:
 # Rodapé informando a fonte
 st.sidebar.markdown("---")
 st.sidebar.caption("Dados sincronizados via Google Drive (Sheets)")
+
